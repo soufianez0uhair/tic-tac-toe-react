@@ -1,13 +1,93 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  padding: 0;
+  box-sizing: border-box; }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+html {
+  font-size: 62.5%; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; }
+
+.grid {
+  width: 30rem;
+  height: 30rem;
+  border: .1rem solid #000;
+  box-sizing: content-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.square {
+  height: 10rem;
+  width: 10rem;
+  border: .1rem solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5.5rem; }
+
+.btn {
+  outline: none;
+  border: none;
+  padding: .5rem;
+  border-radius: .3rem; }
+  .btn:hover {
+    background: #DC2626; }
+
+.icon {
+  font-size: 1.6rem;
+  transition: transform .2s ease-in; }
+  .icon:hover {
+    transform: scale(1.3); }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 1.4rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; }
+
+.initial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #DC2626;
+  height: 100vh;
+  color: #fff;
+  gap: 1rem; }
+  .initial__text {
+    font-size: 2.5rem; }
+
+.choices {
+  display: flex;
+  gap: 1.5rem; }
+  .choices .choice {
+    font-size: 4.2rem;
+    font-weight: 500;
+    padding: .75rem 2rem;
+    color: #DC2626;
+    background: #fff;
+    border-radius: .3rem;
+    cursor: pointer; }
+
+.game {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; }
+  .game__winner-banner {
+    font-size: 2.8rem; }

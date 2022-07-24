@@ -1,0 +1,11 @@
+.game {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    &__winner-banner {
+        font-size: 2.8rem;
+    }
+}
